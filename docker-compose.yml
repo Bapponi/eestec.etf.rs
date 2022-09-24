@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  front-end:
+    build: ./front-end
+    container_name: front-end
+    volumes:
+      - ./front-end/src:/app/src
+    ports:
+      - 8080:8080
